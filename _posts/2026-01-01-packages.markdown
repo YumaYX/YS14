@@ -5,6 +5,7 @@ category: uncategorized
 
 ```sh
 pkg install -y git
+pkg install -y rust
 ```
 
 ```sh
