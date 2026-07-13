@@ -1,0 +1,15 @@
+---
+layout: post
+category: uncategorized
+---
+
+```sh
+pkg install -y git
+```
+
+```sh
+pkg update
+pkg update -f
+pkg upgrade
+```
+
