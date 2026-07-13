@@ -27,6 +27,7 @@ exclude:
   - makefile
   - mkpost
   - .jekyll-cache/
+  - freebsd/
 #   - .sass-cache/
 #   - gemfiles/
 #   - node_modules/
