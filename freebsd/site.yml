@@ -1,0 +1,18 @@
+---
+- name: Provision FreeBSD
+  hosts: all
+  become: true
+  gather_facts: true
+
+  tasks:
+    - name: Update package repository
+      ansible.builtin.command: pkg update
+      changed_when: false
+
+    - name: Install packages
+      community.general.pkgng:
+        name:
+          - git
+          - vim
+        state: present
+
