@@ -9,4 +9,26 @@ sudo pkg update
 sudo pkg install git curl bash gmake autoconf readline libyaml libffi openssl
 ```
 
-<https://yumayx.github.io/docs/ruby/2024/04/06/Ruby%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB.html>
+```sh
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+# rbenv PATH通し
+if [ $(grep '^# rbenv$' ~/.bash_profile > /dev/null; echo ${?}) -ne 0 ] ; then
+    echo '# rbenv' >> ~/.bash_profile
+    echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+    echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+    source ~/.bash_profile
+    cat <<'GEMRC' > ~/.gemrc
+install: --no-document
+update: --no-document
+GEMRC
+fi
+
+rubyver=4.0.2
+time CONFIGURE_OPTS="--disable-install-doc" MAKE_OPTS="-j 4" rbenv install ${rubyver}
+rbenv global ${rubyver}
+source ~/.bash_profile
+ruby -v
+gem update --system;gem update
+```
