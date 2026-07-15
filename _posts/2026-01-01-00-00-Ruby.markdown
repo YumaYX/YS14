@@ -18,7 +18,7 @@ sudo pkg install git curl bash gmake autoconf readline libyaml libffi openssl
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 
-# rbenv PATH通し
+# rbenv PATH
 if [ $(grep '^# rbenv$' ~/.bash_profile > /dev/null; echo ${?}) -ne 0 ] ; then
     echo '# rbenv' >> ~/.bash_profile
     echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
