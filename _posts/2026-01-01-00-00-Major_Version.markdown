@@ -22,6 +22,7 @@ freebsd-update upgrade -r 15.0-RELEASE
 ## Install & Update
 
 ```sh
+freebsd-update fetch
 freebsd-update install
 reboot
 ```
