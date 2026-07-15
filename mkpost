@@ -12,6 +12,7 @@ cat > $filename <<PTEMPLATE
 ---
 layout: post
 category: uncategorized
+title: "untilled"
 ---
 
 PTEMPLATE
