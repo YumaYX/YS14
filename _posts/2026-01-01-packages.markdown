@@ -1,6 +1,7 @@
 ---
 layout: post
-category: Packages
+category: Package
+title: "Packages"
 ---
 
 ## Install Packages
