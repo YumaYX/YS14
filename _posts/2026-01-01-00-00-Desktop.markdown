@@ -1,17 +1,20 @@
 ---
 layout: post
-category: uncategorized
+category: Desktop
 ---
 
+## Install Desktop
 
 ```sh
 sudo pkg update
 
 sudo pkg install xorg
-
 sudo pkg install kde plasma6-plasma sddm
 
 sudo sysrc dbus_enable=YES
 sudo sysrc sddm_enable=YES
+```
+
+```sh
 reboot
 ```
