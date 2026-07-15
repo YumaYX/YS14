@@ -2,17 +2,14 @@
 layout: default
 ---
 
-<section>
-本プロジェクトは、FreeBSDを使用した検証の記録である。
-よく使うコマンドや設定集を紹介する。
-</section>
+This project documents experiments conducted using FreeBSD. It introduces commonly used commands and configuration examples.
 
 {% for category in  site.categories %}
 ## {{ forloop.index }} {{ category[0] }}
 {% for post in site.posts reversed %}{% if post.category == category[0] %}1. [{{ index }} {{ post.title }}]({{ site.baseurl }}{{ post.url }})
 {% endif %}{% endfor %}{% endfor %}
 
-## 付録
+## Appendix
 
-- [コマンド集](https://yumayx.github.io/docs/)
-- [プロジェクトレポジトリ](https://github.com/YumaYX/YS14)
+- [Commands](https://yumayx.github.io/docs/)
+- [Project Repository - YS14](https://github.com/YumaYX/YS14/)
