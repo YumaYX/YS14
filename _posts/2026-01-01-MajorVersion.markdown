@@ -1,6 +1,7 @@
 ---
 layout: post
 category: Version
+title: "Major Version Update"
 ---
 
 ## Update Major Version
