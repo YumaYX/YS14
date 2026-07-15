@@ -19,3 +19,10 @@ sudo sysrc sddm_enable=YES
 ```sh
 reboot
 ```
+
+## Japanese Setting
+
+```sh
+pkg install ja-font-mplus-ipa ja-font-vlgothic
+```
+
