@@ -1,6 +1,7 @@
 ---
 layout: post
 category: User
+title: "User & Group"
 ---
 
 # Making a Group
