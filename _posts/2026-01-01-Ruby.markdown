@@ -1,13 +1,17 @@
 ---
 layout: post
-category: uncategorized
+category: Programming
 ---
+
+## Install Ruby
 
 ```sh
 # rbenv
 sudo pkg update
 sudo pkg install git curl bash gmake autoconf readline libyaml libffi openssl
 ```
+
+### Install rbenv, Ruby
 
 ```sh
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
