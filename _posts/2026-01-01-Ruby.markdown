@@ -1,6 +1,7 @@
 ---
 layout: post
 category: Programming
+title: "Ruby Installation"
 ---
 
 ## Install Ruby
