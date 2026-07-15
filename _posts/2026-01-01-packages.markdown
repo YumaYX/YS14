@@ -1,16 +1,23 @@
 ---
 layout: post
-category: uncategorized
+category: Packages
 ---
+
+## Install Packages
 
 ```sh
 pkg install -y git
 pkg install -y rust
 ```
 
+## Update
+
 ```sh
 pkg update
-pkg update -f
+
+# pkg update -f
+# For normal maintenance, pkg update is usually sufficient. Running pkg update -f immediately afterward is generally unnecessary unless you specifically need to refresh the repository cache.
+
 pkg upgrade
 ```
 
