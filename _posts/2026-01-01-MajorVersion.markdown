@@ -3,13 +3,30 @@ layout: post
 category: uncategorized
 ---
 
+## Update Major Version
+
+### 14.4
+
 ```sh
 freebsd-update upgrade -r 14.4-RELEASE
-# 設定ファイル変更衝突を直して保存。
-freebsd-update install
-
-reboot
-
-freebsd-version
 ```
 
+
+### 15.0
+
+```sh
+freebsd-update upgrade -r 15.0-RELEASE
+```
+
+## Install & Update
+
+```sh
+freebsd-update install
+reboot
+```
+
+### Check Version
+
+```sh
+freebsd-version
+```
