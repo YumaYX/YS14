@@ -1,6 +1,7 @@
 ---
 layout: post
 category: Desktop
+title: "Desktop Environment"
 ---
 
 ## Install Desktop
