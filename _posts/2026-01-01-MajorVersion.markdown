@@ -1,6 +1,6 @@
 ---
 layout: post
-category: uncategorized
+category: Version
 ---
 
 ## Update Major Version
