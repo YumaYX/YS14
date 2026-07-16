@@ -22,3 +22,10 @@ pkg update
 pkg upgrade
 ```
 
+
+## Check Vul.
+
+```sh
+pkg audit -F
+```
+
